@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th{
+        background-color: rgb(89, 175, 245);
+        color: white;
+        padding: 5px;
+    }
+    td{
+        padding: 3px;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>Tipos de Combate</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Fuego</td>
+            <td>Usar ataques de Fuego para causar Ruptura de Debilidad infligirá Daño de Fuego y aplicará el estado de Quemadura, el cual inflige Daño de Fuego con el tiempo.</td>
+        </tr>
+        <tr>
+            <td>Fisico</td>
+            <td>Usar ataques Fisicos para causar Ruptura de Debilidad infligirá Daño Físico y aplicará el estado de Sangrado, el cual inflige Daño Físico con el tiempo.</td>
+        </tr>
+        <tr>
+            <td>Hielo</td>
+            <td>Usar ataques de Hielo para causar Ruptura de Debilidad infligirá Daño de Hielo y aplicará al enemigo el estado de Congelación, el cual inflige Daño de Hielo adicional.</td>
+        </tr>
+        <tr>
+            <td>Rayo</td>
+            <td>Usar ataques de Rayo para causar Ruptura de Debilidad infligirá Daño de Rayo y aplicará el estado de Electrocución, el cual inflige Daño de Rayo con el tiempo.</td>
+        </tr>
+        <tr>
+            <td>Viento</td>
+            <td>Usar ataques de Viento para causar Ruptura de Debilidad infligirá Daño de Viento y aplicará el estado de Intemperie, el cual inflige Daño de Viento con el tiempo.</td>
+        </tr>
+        <tr>
+            <td>Cuántico</td>
+            <td>Usar ataques Cuánticos para causar Ruptura de Debilidad infligirá Daño Cuántico y aplicará al enemigo el estado de Enredo. Enredo retrasa la acción de los enemigos. Al comenzar el siguiente turno, inflige Daño Cuántico adicional y, cuando el enemigo recibe un ataque, ese daño adicional aumenta.</td>
+        </tr>
+        <tr>
+            <td>Imaginario</td>
+            <td>Usar ataques Imaginarios para causar Ruptura de Debilidad infligirá Daño Imaginario y aplicará al enemigo el estado de Prisión, que retrasa la acción y reduce la VEL del enemigo.</td>
+        </tr>
+        <tr>
+            <th>Vía</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Abundancia</td>
+            <td>Puede curar a los aliados y proporcionar capacidad de regeneración al equipo.</td>
+        </tr>
+        <tr>
+            <td>Destrucción</td>
+            <td>Buena combinación de daño y capacidad de supervivencia, puede adaptarse a distintas situaciones de combate.</td>
+        </tr>
+        <tr>
+            <td>Cacería</td>
+            <td>Capacidad extraordinaria de infligir daño a objetivos individuales. Principal fuente de daño para vencer a enemigos de élite.</td>
+        </tr>
+        <tr>
+            <td>Erudición</td>
+            <td>Capacidad excelente para infligir daño en el AdE, Puede atacar a varios enemigos a la vez.</td>
+        </tr>
+        <tr>
+            <td>Armonía</td>
+            <td>Proporciona efectos positivos a los aliados para mejorar la capacidad de combate del equipo.</td>
+        </tr>
+        <tr>
+            <td>Nihilidad</td>
+            <td>Inflige estados negativos a los enemigos para reducir su capacidad de combate y sus ventajas.</td>
+        </tr>
+        <tr>
+            <td>Conservación</td>
+            <td>Gran capacidad de defensa para proteger a los aliados de muchas formas.</td>
+        </tr>
+        <tr>
+            <td>Reminiscencia</td>
+            <td>Puede invocar a un mnemoduende con habilidades especiales para que luche junto al equipo en la batalla.</td>
+        </tr>
+    </table>
+
+    <form>
+        <h2>¡Cuéntanos sobre tu estilo de combate!</h2>
+    
+        <label for="elemento">¿Cuál es tu tipo de combate favorito?</label>
+        <select id="elemento" name="elemento">
+          <option value="fuego">Fuego</option>
+          <option value="fisico">Físico</option>
+          <option value="hielo">Hielo</option>
+          <option value="rayo">Rayo</option>
+          <option value="viento">Viento</option>
+          <option value="cuantico">Cuántico</option>
+          <option value="imaginario">Imaginario</option>
+        </select>
+    
+        <label for="via">¿Cuál vía prefieres?</label>
+        <select id="via" name="via">
+          <option value="abundancia">Abundancia</option>
+          <option value="destruccion">Destrucción</option>
+          <option value="caceria">Cacería</option>
+          <option value="erudicion">Erudición</option>
+          <option value="armonia">Armonía</option>
+          <option value="nihilidad">Nihilidad</option>
+          <option value="conservacion">Conservación</option>
+          <option value="reminiscencia">Reminiscencia</option>
+        </select>
+    
+        <label for="comentario">¿Por qué te gusta esa combinación?</label>
+        <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu razón aquí..."></textarea>
+    
+        <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>
