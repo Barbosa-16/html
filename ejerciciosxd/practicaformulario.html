@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style2.css" class="css">
+</head>
+<body>
+    <section class="form-container">
+        <form action="#" class="contact-form">
+            <h2>Formulario de Contacto</h2>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="identificacion">Identificacion</label>
+            <input type="number" id="identificacion" name="identificacion" required>
+
+            <label for="numero">Numero de Contacto</label>
+            <input type="tel" id="numero" name="numero" required pattern="{10}"> 
+
+            <label for="corre"> Correo electronico</label>
+            <input type="email" name="correo" id="correo" required>
+
+            <label for="pais">Selecciona tu pais de residencia</label>
+            <select name="pais" id="pais">
+                <option value="colombia">Colombia</option>
+                <option value="venezuela">venezuela</option>
+            </select>
+
+            <label class="checkbox">
+                <input type="checkbox" name="novedades">
+                Deseo recibir notificaciones por correo
+            </label>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </section>
+</body>
+</html>
+
+
